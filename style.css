@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #f9fafb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.card {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card.active {
+  display: block;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  transition: background 0.3s, border 0.3s;
+}
+
+#options button.correct {
+  background: #d4f7d4;
+  border: 1px solid #4caf50;
+}
+
+#options button.wrong {
+  background: #f7d4d4;
+  border: 1px solid #f44336;
+}
